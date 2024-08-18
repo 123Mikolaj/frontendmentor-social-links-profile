@@ -21,6 +21,8 @@ body {
   color: var(--text);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   overflow: hidden;
+  padding: 26px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -73,7 +75,7 @@ svg {
   text-align: center;
   z-index: 1;
   background-color: #00000025;
-  border-radius: 40px;
+  border-radius: 36px;
 }
 
 .profile-links {
