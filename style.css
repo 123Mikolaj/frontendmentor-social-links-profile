@@ -64,6 +64,7 @@ svg {
 
 /* Profile */
 .profile {
+  padding: 56px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +72,8 @@ svg {
   width: 300px;
   text-align: center;
   z-index: 1;
+  background-color: #00000025;
+  border-radius: 40px;
 }
 
 .profile-links {
