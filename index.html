@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Social links profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="profile">
+      <header class="profile-header">
+        <h1>Mikołaj Solecki</h1>
+      </header>
+      <section class="profile-description">
+        <p>Front-end developer</p>
+        <p>Cracow, Poland</p>
+      </section>
+      <nav class="profile-links">
+        <a
+          href="https://www.linkedin.com/in/mikolaj-solecki/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/123Mikolaj"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.frontendmentor.io/profile/123Mikolaj"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >
+        <a
+          href="https://gitlab.com/mikolaj.solecki.123"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitLab</a
+        >
+      </nav>
+    </main>
+
+    <section class="blob-container blob-container-right">
+      <div class="blob yellow"></div>
+      <div class="blob red"></div>
+      <div class="blob green"></div>
+    </section>
+
+    <section class="blob-container blob-container-left">
+      <div class="blob blue"></div>
+      <div class="blob purple"></div>
+      <div class="blob orange"></div>
+    </section>
+
+    <svg>
+      <filter id="noiseFilter">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="0.6"
+          stitchTiles="stitch"
+        />
+        <feComponentTransfer>
+          <feFuncA type="gamma" amplitude="3" exponent="3" offset="0" />
+        </feComponentTransfer>
+        <feColorMatrix
+          in="colorNoise"
+          type="matrix"
+          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"
+        />
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise" />
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" />
+      </filter>
+    </svg>
+  </body>
+</html>
