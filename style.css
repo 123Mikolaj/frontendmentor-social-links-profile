@@ -102,6 +102,7 @@ svg {
   flex-direction: column;
   margin-bottom: 1.75em;
   gap: 0.2em;
+  font-style: italic;
 }
 
 .profile-header {
